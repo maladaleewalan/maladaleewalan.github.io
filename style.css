@@ -42,19 +42,17 @@ body {
     background-attachment: fixed;
 }
 .big{
-    font-size: 70px;
+    font-size: 60px;
 }
-.notice{
-    color : red;
-    font-size: 20px;
-}
+
 .power {
     margin: 5px 200px 5px 200px;
 }
 .boxxx {
-    width:500px;
-   /* margin: 0px 300px 0px 270px;*/
-    border:10px dotted #ff5252 ;
+    width:750px;
+    margin: 0px 0px 20px 400px;
+    border:10px dotted #ff5252;
+
 }
 .card-body-color {
     background-color: #f8bbd0;
