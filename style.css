@@ -1,14 +1,16 @@
-h1 {
+h1.title {
     text-align: center;
-    
     color:#e91e63 ;
     text-shadow:5px 5px rgb(90, 38, 54);
-}
-.head {
     font-size: 70px;
     margin: 50px 0px 20px 0px;
     font-family: 'Chewy', cursive;
 }
+/* .title {
+    font-size: 70px;
+    margin: 50px 0px 20px 0px;
+    font-family: 'Chewy', cursive;
+} */
 .menu {
     margin: 0px 300px 0px 300px;
     font-size: 20px;
@@ -28,17 +30,15 @@ span.style-group {
 }
 a.click {
     color: #e91e63;
- 
 }
 a.click:hover {
     background-color: rgb(182, 81, 212);
 }
 i.less {
     color:red;
-    
 }
 body {
-    background: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo.jpg");
+    background-image: url("pic/background.jpg");
     background-attachment: fixed;
 }
 .big{
@@ -48,16 +48,23 @@ body {
 .power {
     margin: 5px 200px 5px 200px;
 }
+.content-power {
+    font-size: 18px;
+}
 .boxxx {
     width:750px;
     margin: 0px 0px 20px 400px;
     border:10px dotted #ff5252;
-
 }
 .card-body-color {
     background-color: #f8bbd0;
 }
 .explain {
     font-size:20px;
+}
+.pink-button {
+    background-color: #e91e63;
+    border-radius: 30px;
+    margin: 5px 0 5px 0;
 }
 
