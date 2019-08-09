@@ -17,11 +17,17 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
     crossorigin="anonymous">
 
-  <!-- Modal -->
+  <!-- tooltip -->
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
 
 </head>
 
@@ -33,7 +39,7 @@
       <a class="nav-link click" href="index.html" role="tab">Profile</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active click" href="#" role="tab">CSS Specificity</a>
+      <a class="nav-link active click" href="" role="tab">CSS Specificity</a>
     </li>
   </ul>
   <!-- <a href="index.html">gotopage</a> -->
@@ -45,199 +51,44 @@
       <ins>จัดกลุ่มการเขียน Style ได้ 4 กลุ่ม</ins>
       <br>
 
-      <div>
-      <button type="button" class="pink-button" data-toggle="modal" data-target=".bd-example-modal-lg">Inline style</button>
-      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-              Inline style : กำหนด style ในแท็กนั้นเลย <br>
-              <img src="pic/ex-inline.png">
-          </div>
-        </div>
-      </div>
-    </div>
+     
+    
+
+        
+        <button type="button" class="pink-button" data-toggle="tooltip" data-placement="right" 
+        title='กำหนด style ในแท็กนั้นเลย เช่น 
+        <p style="color:blue;margin-left:15px;">...</p>'>
+        Inline style
+        </button> <br>
+
+        <button type="button" class="pink-button" data-toggle="tooltip" data-placement="right" 
+        title='กำหนด id ในแท็ก แล้วกำหนด style ของ Element ที่มี id นี้ในไฟล์ .css เช่น 
+        HTML file-> <p id="example">...</p> CSS file-> #example {color:pink}'>
+        ID selector
+        </button> <br>
+
+        <button type="button" class="pink-button" data-toggle="tooltip" data-placement="right" 
+        title='กำหนด style คล้าย ID selector แต่ เปลี่ยนจาก id เป็น class เช่น 
+        HTML file -> <p class="example">...</p> CSS file -> .
+        example { color:pink}'>
+        Class selector
+        </button> <br>
+
+        <button type="button" class="pink-button" data-toggle="tooltip" data-placement="right" 
+        title='กำหนด tagname เป็น selector ในไฟล์ css เช่น 
+        .p {color:pink}'>
+        Element selector
+        </button> <br>
+
       
-    <div>
-        <button type="button" class="pink-button" data-toggle="modal" data-target=".bd-example-modal-lg">ID selector</button>
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                Inline style : กำหนด style ในแท็กนั้นเลย <br>
-                <img src="pic/ex-inline.png">
-            </div>
-          </div>
-        </div>
-      </div>
+       
 
-      <div>
-          <button type="button" class="pink-button" data-toggle="modal" data-target=".bd-example-modal-lg">Class selector</button>
-          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                  Inline style : กำหนด style ในแท็กนั้นเลย <br>
-                  <img src="pic/ex-inline.png">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-            <button type="button" class="pink-button" data-toggle="modal" data-target=".bd-example-modal-lg">Element selector</button>
-            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    Inline style : กำหนด style ในแท็กนั้นเลย <br>
-                    <img src="pic/ex-inline.png">
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-       ค่าความสำคัญ เป็นดังนี้
+    
     </p>
-
-
-    <div>
-      <div class="progress power">
-        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        <span class="content-power">Element selector</span>
-      </div>
-      <div class="progress power">
-        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-        <span class="content-power">Class selector</span>
-      </div>
-      <div class="progress power">
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-        <span class="content-power">ID selector</span>
-      </div>
-      <div class="progress power">
-        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-        <span class="content-power">Inline</span>
-      </div>
     </div>
-    <div>
-      Element selector (ค่าความสำคัญน้อยที่สุด)
-      <i class="fas fa-less-than less"></i> Class selector
-      <i class="fas fa-less-than less"></i> ID selectors
-      <i class="fas fa-less-than less"></i>
-      Inline style (ค่าความสำคัญมากที่สุด)
-      <br> แบ่งคะแนนเค่าความสำคัญเป็นแบบนี้
-      <span class="big">x,y,z,t </span> (เลข 4 ตัว
-      <ins>Style 4 กลุ่ม </ins>)
-      <br> x = Inline style
-      <br> y = ID selector
-      <br> z = Class selector
-      <br> t = Element selector
-      <br>
-
-      <span> การคิดคะแนน จะดูจากฝั่งซ้าย เป็นค่าสูงสุด และลดลงตามลำดับ</span>
-    </div>
-    <h1 class="title">Example</h1>
-    <div class="card-group boxxx">
-      <div class="card">
-        <img src="pic/ex1-1.png" class="card-img-top" alt="...">
-        <div class="card-body card-body-color">
-          <h5 class="card-title">HTML file</h5>
-          <p class="card-text explain">กำหนด Style แบบ Inline style ให้ตัวอักษรมีสีแดง </p>
-          <p class="card-text explain">
-            <small class="text-muted">1,0,0,0</small>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="pic/ex1-2.png" class="card-img-top" alt="...">
-        <div class="card-body card-body-color">
-          <h5 class="card-title">CSS file</h5>
-          <p class="card-text explain">กำหนด Style แบบ Element selector ให้ตัวอักษรมีสีเหลือง </p>
-          <p class="card-text explain">
-            <small class="text-muted">0,0,0,1</small>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="pic/ex1-3.png" class="card-img-top" alt="...">
-        <div class="card-body card-body-color">
-          <h5 class="card-title">Output</h5>
-          <p class="card-text explain">Inline style มีค่าความสำคัญมากสุด ผลลัพธ์ออกมา ตัวอักษรจะมีสีแดง</p>
-          <p class="card-text explain">
-            <small class="text-muted"></small>
-          </p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="card-group boxxx">
-      <div class="card">
-        <img src="pic/ex2-1.png" class="card-img-top" alt="...">
-        <div class="card-body card-body-color">
-          <h5 class="card-title">HTML file</h5>
-          <p class="card-text explain">div มี id = test </p>
-          <p class="card-text explain">
-            <small class="text-muted"></small>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="pic/ex2-2.png" class="card-img-top" alt="...">
-        <div class="card-body card-body-color">
-          <h5 class="card-title">CSS file</h5>
-          <p class="card-text explain">กำหนด style</p>
-          <p class="card-text explain">
-            <small class="text-muted">div#test h1 : 0,1,0,2
-              <br> div h1 : 0,0,0,2
-              <br> h1 : 0,0,0,1</small>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="pic/ex2-3.png" class="card-img-top" alt="...">
-        <div class="card-body card-body-color">
-          <h5 class="card-title">Output</h5>
-          <p class="card-text explain">โดยจะเห็นว่า div#test h1 มีการกำหนดแบบเจาะจงที่สุด และมีค่าความสำคัญมากที่สุด ตัวอักษรจึงออกมาเป็นสีส้ม</p>
-          <p class="card-text explain">
-            <small class="text-muted"></small>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="card-group boxxx">
-      <div class="card">
-        <img src="pic/ex3-1.png" class="card-img-top" alt="...">
-        <div class="card-body card-body-color">
-          <h5 class="card-title">HTML file</h5>
-          <p class="card-text explain"></p>
-          <p class="card-text explain">
-            <small class="text-muted"></small>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="pic/ex3-2.png" class="card-img-top" alt="...">
-        <div class="card-body card-body-color">
-          <h5 class="card-title">CSS file</h5>
-          <p class="card-text explain">การกำหนด style โดย html , body , h1 ต่างก็เป็น Element selector ทั้ง 2 selector นี้จึงมีค่าความสำคัญเท่ากัน</p>
-          <p class="card-text explain">
-            <small class="text-muted">
-              html h1 : 0,0,0,2
-              <br> body h1 : 0,0,0,2</small>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="pic/ex3-3.png" class="card-img-top" alt="...">
-        <div class="card-body card-body-color">
-          <h5 class="card-title">Output</h5>
-          <p class="card-text explain">ทั้ง 2 selector มีค่าความสำคัญเท่ากัน จึงเลือก selector ที่อยู่ด้านล่าง ตัวอักษรจึงออกมาเป็นสีม่วง</p>
-          <p class="card-text explain">
-            <small class="text-muted"></small>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+    <a href="CSS2.html" class="next"> NEXT<i class="fas fa-hand-point-right"></i></a>
+   
+    
 
 
 
