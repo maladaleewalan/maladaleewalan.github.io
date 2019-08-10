@@ -55,6 +55,7 @@ body {
     width:750px;
     margin: 0px 0px 20px 400px;
     border:10px dotted #ff5252;
+    
 }
 .card-body-color {
     background-color: #f8bbd0;
@@ -82,10 +83,25 @@ body {
     text-shadow:3px 3px rgb(90, 38, 54);
     font-family: 'Chewy', cursive;
 }
-.content.profile-right {
-    padding-left:10px;
+data {
+    font-weight: bold;
+    font-size: 25px;
+    color:#e91e63 ;
+    text-shadow:2px 2px rgb(90, 38, 54);
+   
 }
-.content.profile-left {
-    padding-right: 10px;
+img.image {
+    border:5px #e91e63 dashed;
+    box-shadow: 3px 3px black;
 }
-
+h1 {
+    font-size: 25px;
+    color:#e91e63 ;
+    text-shadow:3px 3px rgb(90, 38, 54);
+    font-family: 'Chewy', cursive;
+}
+.nav-bottom {
+    position: fixed;
+    bottom:0;
+ 
+}
