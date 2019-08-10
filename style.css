@@ -70,22 +70,22 @@ body {
 .back {
     float: left; 
     margin-left:200px;
-    margin-bottom: 30px;
-    font-size: 30px;
-    color:#e91e63 ;
-    text-shadow:3px 3px rgb(90, 38, 54);
-    font-family: 'Chewy', cursive;
-
-
-}.next {
+}
+.next {
     float: right;
     margin-right:200px;
+}
+.go-to-page { 
     margin-bottom: 30px;
     font-size: 30px;
     color:#e91e63 ;
     text-shadow:3px 3px rgb(90, 38, 54);
     font-family: 'Chewy', cursive;
-
-
+}
+.content.profile-right {
+    padding-left:10px;
+}
+.content.profile-left {
+    padding-right: 10px;
 }
 
