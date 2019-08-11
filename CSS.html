@@ -17,17 +17,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
     crossorigin="anonymous">
 
-  <!-- tooltip -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();   
-    });
-    </script>
 
 </head>
 
@@ -42,7 +31,7 @@
       <a class="nav-link active click" href="" role="tab">CSS Specificity</a>
     </li>
   </ul>
-  <!-- <a href="index.html">gotopage</a> -->
+
   <div class="content">
     <p>CSS Specificity คือค่าความสำคัญที่จะบอก browser ว่าให้เลือกใช้ Style ตัวไหนมาแสดงผลหน้าเว็บ
       <br> เมื่อมีการกำหนด CSS ที่ element เดียวกัน โดยจะเลือก Style ที่มีค่าความสำคัญมากที่สุด (มีการกำหนดเจาะจงที่สุด)
@@ -69,8 +58,10 @@
 
         <button type="button" class="pink-button" data-toggle="tooltip" data-placement="right" 
         title='กำหนด style คล้าย ID selector แต่ เปลี่ยนจาก id เป็น class เช่น 
-        HTML file -> <p class="example">...</p> CSS file -> .
-        example { color:pink}'>
+        HTML file -> <p class="example">...</p> 
+        CSS file -> .example { color:pink} 
+        หรือ Pseudo-Classes เช่น .example:hover { color:pink; }'>
+        
         Class selector
         </button> <br>
 
